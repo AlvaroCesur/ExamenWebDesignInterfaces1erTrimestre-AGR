@@ -1,1 +1,161 @@
-/*# sourceMappingURL=style.css.map */
+/* Álvaro González Rando 2ºDAW */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    background: rgb(2,0,36);
+    background: linear-gradient(133deg, rgba(2,0,36,1) 0%, rgba(233,165,16,1) 29%, rgba(196,183,143,1) 48%, rgba(213,255,240,1) 100%);
+    background-repeat: no-repeat;
+}
+
+#contenidoTabla {
+    width: 75vw;
+    max-height: 720px;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 10vh;
+    border-style: solid;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+header {
+    height: 25%;
+    width: 100%;
+    border-bottom-style: solid;
+    background-color: lightgray;
+}
+
+h1, h4 {
+    font-family: 'Fredoka One', cursive;
+}
+
+table {
+    margin: 2rem 0 0 0;
+    border: 1px solid orange;
+    border-collapse: collapse;
+}
+
+.col, .colCal {
+    border: solid 1px orange;
+}
+
+.colCal {
+    font-size: 20px;
+    font-weight: 500
+}
+
+th, td {
+    padding: 10px;
+}
+
+.filaInicial {
+    font-family: 'Fredoka One', cursive;
+    background-color: orange;
+}
+
+.fila:hover{
+    background-color: rgba(239, 156, 1, 0.8);
+}
+
+.hombre {
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.mujer {
+    background-color: pink;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.actividad {
+    background-color: darkgray;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+button {
+    height: 40px;
+    width: 175px;
+    margin-bottom: 2rem;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 2rem;
+}
+
+.verde {
+    background-color: green;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+footer {
+    height: 10%;
+    width: 100%;
+    text-align: center;
+    background-color: lightgray;
+    border-top-style: solid;
+}
+
+#modal {
+    display: none;
+    width: 40vw;
+    max-height: 720px;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 10vh;
+    border-style: solid;
+    border-radius: 1rem;
+    
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+
+.divFormulario {
+    margin: 1rem 0 1rem 0;
+}
+
+#botonEnviar {
+    height: 40px;
+    width: 175px;
+    margin: auto;
+    margin-bottom: 2rem;
+    border-style: none;
+    border-radius: 10px;
+    color: white;
+    margin-top: 2rem;
+    background-color: green;
+    border-style: solid;
+    margin-right: 0.5rem;
+}
+
+.gris {
+    background-color: darkgray;
+}

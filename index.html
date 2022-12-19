@@ -5,14 +5,216 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Completa tu nombre -->
-    <title>NOMBRE_DEL_ALUMNO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
 
-    <style src="static/style.css"></style>
+    <!-- Completa tu nombre -->
+    <title>Alvaro_Gonzalez_Rando</title>
+
+    <link rel="stylesheet" href="static/style.css">
+
 </head>
 <body>
 
     <!-- Completar html aqui -->
+
+    <main id="contenidoTabla">
+
+        <header>
+
+            <h1>Aplicación de dietas</h1>
+    
+        </header>
+
+        <section>
+
+            <table>
+
+                <tbody>
+
+                    <tr class="filaInicial">
+                        <th>Nombre</th>
+                        <th>Sexo</th>
+                        <th>Edad</th>
+                        <th>Altura</th>
+                        <th>Peso</th>
+                        <th>Actividad</th>
+                        <th>IM Basal</th>
+                        <th>Calorias necesarias</th>
+                    </tr>
+
+                    <tr class="fila">
+
+                        <td class="col">Francisco Romero</td>
+                        <td class="col"><span class="hombre">hombre</span></td>
+                        <td class="col">31</td>
+                        <td class="col">198</td>
+                        <td class="col">89</td>
+                        <td class="col"><span class="actividad">moderada</span></td>
+                        <td class="colCal">1427 kCal</td>
+                        <td class="colCal">1712 kCal</td>
+        
+                    </tr>
+
+                    <tr class="fila">
+                        
+                        <td class="col">Jose Antonio Lara</td>
+                        <td class="col"><span class="hombre">hombre</span></td>
+                        <td class="col">46</td>
+                        <td class="col">187</td>
+                        <td class="col">85</td>
+                        <td class="col"><span class="actividad">moderada</span></td>
+                        <td class="colCal">1333 kCal</td>
+                        <td class="colCal">1435 kCal</td>
+        
+                    </tr>
+
+                    
+                    <tr class="fila">
+                        
+                        <td class="col">Jeniffer Lopez</td>
+                        <td class="col"><span class="mujer">mujer</span></td>
+                        <td class="col">45</td>
+                        <td class="col">167</td>
+                        <td class="col">56</td>
+                        <td class="col"><span class="actividad">alta</span></td>
+                        <td class="colCal">1256 kCal</td>
+                        <td class="colCal">1943 kCal</td>
+        
+                    </tr>
+
+                    <tr class="fila">
+                        
+                        <td class="col">Aljandro Pascual Moreno</td>
+                        <td class="col"><span class="hombre">hombre</span></td>
+                        <td class="col">20</td>
+                        <td class="col">175</td>
+                        <td class="col">73</td>
+                        <td class="col"><span class="actividad">sedentario</span></td>
+                        <td class="colCal">1356 kCal</td>
+                        <td class="colCal">1843 kCal</td>
+        
+                    </tr>
+
+                    
+                    <tr class="fila">
+                        
+                        <td class="col">Alicia Ruiznavarro Ambrona</td>
+                        <td class="col"><span class="mujer">mujer</span></td>
+                        <td class="col">19</td>
+                        <td class="col">10</td>
+                        <td class="col">5</td>
+                        <td class="col"><span class="actividad">sedentario</span></td>
+                        <td class="colCal">10 kCal</td>
+                        <td class="colCal">20 kCal</td>
+        
+                    </tr>
+
+                    
+                    <tr class="fila">
+                        
+                        <td class="col">Alejandro Cabrera García</td>
+                        <td class="col"><span class="hombre">hombre</span></td>
+                        <td class="col">30</td>
+                        <td class="col">182</td>
+                        <td class="col">76</td>
+                        <td class="col"><span class="actividad">suave</span></td>
+                        <td class="colCal">1478 kCal</td>
+                        <td class="colCal">2012 kCal</td>
+        
+                    </tr>
+
+                </tbody>
+                
+            </table>
+
+        </section>
+
+        <section>
+
+            <button class="verde">Añadir cliente</button>
+
+        </section>
+
+        <footer>
+
+            <h4>Álvaro González Rando&#169; 2022</h4>
+
+        </footer>
+
+    </main>
+
+    <div id="modal">
+
+            <header>
+    
+                <h1>Nuevo cliente</h1>
+        
+            </header>
+
+            <section>
+
+                <form id="formulario" action="URL">
+
+                    <div class="divFormulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" name="nombre" required>
+                    </div>
+
+                    <div class="divFormulario">
+                        <label for="sexo">Sexo:</label>
+
+                        <input type="radio" name="hombre" value="Hombre" required>
+                        <label for="hombre">Hombre</label>
+                        <input type="radio" name="mujer" value="Mujer" required>
+                        <label for="hombre">Mujer</label>
+                    </div>
+
+                    <div class="divFormulario">
+                        <label for="edad">Edad:</label>
+                        <input type="number" name="edad" maxlength="3" placeholder="20" required>
+                    </div>
+
+                    <div class="divFormulario">
+                        <label for="altura">Altura (cm):</label>
+                        <input type="number" name="edad" maxlength="3" placeholder="165" required>
+                    </div>
+                    
+                    <div class="divFormulario">
+                        <label for="peso">Peso (kg):</label>
+                        <input type="number" name="edad" maxlength="3" placeholder="65" required>
+                    </div>
+
+                    <div class="divFormulario">
+                        <label for="actividad-fisica">Actividad física:</label>
+                        <select name="actividad-fisica" id="actividad-fisica" form="actividad-fisica-form" placeholder="Suave o sedentario" required>
+                            <option value="Suave o sedentario">
+                            <option value="Moderada">
+                            <option value="Alta">
+                        </select>
+                    </div>
+
+                </form>
+
+            </section>
+
+            <footer>
+
+                <input
+                name="add"
+                type="submit"
+                value="Añadir Nuevo"
+                title="add"
+                form="formulario"
+                id="botonEnviar"
+                />
+
+                <button class="gris">Volver atrás</button>
+    
+            </footer>
+
+    </div>
 
     <script src="static/app.js"></script>
 
